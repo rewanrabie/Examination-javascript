@@ -1,6 +1,8 @@
 body{
     display: flex;
     flex-direction: row;
+    margin:0;
+    
 }
 
 .marked{
@@ -12,6 +14,7 @@ body{
 .container{
     width: 80%;
     height: 100%;
+    background-color: #ddd;
 }
 
 .answers{
@@ -19,12 +22,16 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 .answers>*{
     padding :30px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: goldenrod;
     margin: 30px;
+    width:30% ;
 }
+
+
 
 
