@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>login</h1>  
+        <hr>
+        <br>
+        <form method="GET"  action="home.html" onsubmit="return validation(event)">
+
+            <div class="input-group">
+                <label for="user-name">User Name</label>
+                <input type="text" id="user-name" required>
+                <br>
+                <br>
+                <label for="password">password</label>
+                <input type="password" id="password" required>
+             </div>
+             <p></p>
+
+            
+            
+            <div class="btn-submit">
+                <input type="submit" value="Log in">
+            </div>
+            
+        </form>
+
+
+        <p class="warning">Your exam duration is only 30 minutes, starting as soon as you sign in.</p>
+    </div>
+<script src="login.js"></script>
+</body>
+</html>
