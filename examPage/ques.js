@@ -1,3 +1,7 @@
+let btnNext  = document.getElementById("next")
+let btnpre  = document.getElementById("pre")
+
+
 let question1 = {
     ques : "how are you doing?",
     answers :["good","bad","nice","Stright"] ,
@@ -31,27 +35,48 @@ for(let i = 1; i<=4;i++){
 
 let question  = 1 ;
 showQuest(question)
+
 function next(){
-    if(question<ques.length){
+
+    if(question==1){
+       btnpre.style.display="inline" 
+       question ++;
+    showQuest(question)  
+    }else if(question==ques.length-1){
         question ++;
-        showQuest(question)
+        showQuest(question)  
+        btnNext.style.display="none";
     }
+    else{
+        question ++;
+        showQuest(question)    
+    }
+
+    
 }
 
 function pre(){
     
-    if(question>1){
+    if(question ==2){
+        if (question==2){btnpre.style.display = "none"}
         question --;
         showQuest(question)
     }
-
+    
+    else if(question>1){
+        question --;
+        showQuest(question)
+    }
+    if(question ==ques.length-1){
+        btnNext.style.display="inline";
+    }
 }
 
-let btnNext 
 
 
-if (question===1){
+if (question==1){btnpre.style.display = "none"}
 
-}
+
+
 
 
