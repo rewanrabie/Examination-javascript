@@ -32,9 +32,26 @@ for(let i = 1; i<=4;i++){
 let question  = 1 ;
 showQuest(question)
 function next(){
-    question++;
-    if(question<=ques.length)showQuest(question)
+    if(question<ques.length){
+        question ++;
+        showQuest(question)
+    }
 }
 
+function pre(){
+    
+    if(question>1){
+        question --;
+        showQuest(question)
+    }
+
+}
+
+let btnNext 
+
+
+if (question===1){
+
+}
 
 
