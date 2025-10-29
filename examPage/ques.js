@@ -98,13 +98,15 @@ function mark(){
 
     }else{
         marked_ques.add(question)
-        document.querySelector(".marked").innerHTML+=(`<div><button class="question-marked" onclick="change(${question})">Question ${question}</button></div>`)
+        document.querySelector(".marked").innerHTML+=(`<div><button class="question-marked" id="question-${question}" onclick="change(${question})">Question ${question}</button></div>`)
     }
 
 }
 
+let button_marked = document.getElementById(`question-${question}`)
 function change(q){
     showQuest(q);
+   
 }
 
 
