@@ -30,6 +30,9 @@ for(let i = 1; i<=4;i++){
     let answer = document.querySelector(`.answers .answer-${i}`)
     answer.textContent = ques[question-1].answers[i-1]
 }
+    if(question==1){
+        btnpre.style.display="none";
+    }else if(question ==ques.length)btnNext.style.display="none";
 }
 
 
@@ -77,6 +80,12 @@ function pre(){
 if (question==1){btnpre.style.display = "none"}
 
 
+function mark(){
+    document.querySelector(".marked").innerHTML+=(`<div><button class="question-marked" onclick="change(${question})">Question ${question}</button></div>`)
+}
 
+function change(q){
+    showQuest(q);
+}
 
 
