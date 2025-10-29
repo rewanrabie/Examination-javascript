@@ -37,7 +37,15 @@ for(let i = 1; i<=4;i++){
 }
     if(question==1){
         btnpre.style.display="none";
-    }else if(question ==ques.length)btnNext.style.display="none";
+        btnNext.style.display="inline";
+
+    }else if(question ==ques.length){
+        btnNext.style.display="none"
+        btnpre.style.display="inline";
+    };
+
+
+
 }
 
 
@@ -84,9 +92,15 @@ function pre(){
 
 if (question==1){btnpre.style.display = "none"}
 
-
+let marked_ques  = new Set();
 function mark(){
-    document.querySelector(".marked").innerHTML+=(`<div><button class="question-marked" onclick="change(${question})">Question ${question}</button></div>`)
+    if(marked_ques.has(question)){
+
+    }else{
+        marked_ques.add(question)
+        document.querySelector(".marked").innerHTML+=(`<div><button class="question-marked" onclick="change(${question})">Question ${question}</button></div>`)
+    }
+
 }
 
 function change(q){
