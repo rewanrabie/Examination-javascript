@@ -66,3 +66,7 @@ body{
     height: 30px;
 }
 
+.answers  p{
+    display: inline;
+}
+

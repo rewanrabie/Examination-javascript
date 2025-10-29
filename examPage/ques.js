@@ -17,8 +17,13 @@ let question3 = {
     answers :["No","Yes","Maybe","IDK"] ,
     correct : 1
 }
+let question4 = {
+    ques : "where is Egypt?",
+    answers :["No","Yes","Maybe","IDK"] ,
+    correct : 1
+}
 
-let ques = [question1,question2,question3];
+let ques = [question1,question2,question3,question4];
 
 
 let quesEl = document.querySelector(".question h1")
@@ -27,7 +32,7 @@ let quesEl = document.querySelector(".question h1")
 function showQuest(question){
 quesEl.textContent = ques[question-1].ques;
 for(let i = 1; i<=4;i++){
-    let answer = document.querySelector(`.answers .answer-${i}`)
+    let answer = document.querySelector(`.answers .answer-${i} p`)
     answer.textContent = ques[question-1].answers[i-1]
 }
     if(question==1){
