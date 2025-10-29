@@ -1,6 +1,6 @@
 body { 
   font-family: Arial;
-   background: linear-gradient(135deg, #385991, #2a4579); 
+  background: linear-gradient(135deg, #506fa3, #5b77ab); 
   display: flex;
   margin: 0;
   padding: 20px;
@@ -32,7 +32,8 @@ body {
   background-color: #3a5f8f; 
   display: flex;
   flex-direction: column;
-  padding: 40px 30px;
+  padding-right: 55px ;
+  padding-left: 30px ;
   border-radius: 20px;
   box-shadow: 0 10px 25px #0000004d;
   width: 400px;
@@ -54,20 +55,20 @@ label {
 
 input {
   background-color: #e0f7fa;
-  color: #3a5f8f;
   width: 100%;
   padding: 10px;
   margin-top: 5px;
   border: 1px solid #90caf9; 
-  border-radius: 9px 9px;
+  border-radius: 9px;
 }
 
 button {
   width: 100%;
-  margin-top: 20px;
+  margin-top:20px;
+  margin-left: 12px;
   background-color: #254974;
   color: white;
-  padding: 12px;
+  padding: 15px;
   border: none;
   border-radius: 8px;
   font-size: 16px;
@@ -98,7 +99,3 @@ button:hover {
   object-fit: cover;
 }
 }
-
-
-
-
