@@ -1,77 +1,86 @@
 body { 
-  font-family: Arial, sans-serif;
-   background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
-    margin: 0;
-     padding: 20px;
-     }
+  font-family: Arial;
+   background: linear-gradient(135deg, #385991, #2a4579); 
+  display: flex;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
 
 
 .register-container {
+  align-items: stretch; 
+  gap: 40px; 
+  max-width: 1000px; 
+  width: 90%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  gap: 40px; 
-  flex-wrap: wrap;
 }
+
 
 .image-part img {
-  width: 400px;
-  max-width: 90vw;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  width: 800px; 
+  height: 100%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px #0000004d;
 }
 
-
 .form-part .container {
-  background-color: white;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  background-color: #3a5f8f; 
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px #0000004d;
   width: 400px;
-  max-width: 90vw;
 }
 
 h1 {
   text-align: center;
-  color: #333;
-  margin-bottom: 20px;
+  color: #e0f7fa; 
+  margin-bottom: 25px;
 }
 
 label {
-  display: block;
+   color: #e0f7fa;
   font-weight: bold;
+  display: block;
   margin-top: 10px;
+    padding: 5px;
 }
 
 input {
+  background-color: #e0f7fa;
+  color: #3a5f8f;
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid #90caf9; 
+  border-radius: 9px 9px;
 }
 
 button {
   width: 100%;
   margin-top: 20px;
-  background-color: #4a90e2;
+  background-color: #254974;
   color: white;
-  padding: 10px;
+  padding: 12px;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 8px;
   font-size: 16px;
 }
 
 button:hover {
-  background-color: #357ab8;
+  background-color: #132133; 
 }
 
 .error {
-  color: red;
-  margin-top: 10px;
+  color: #ff5252; 
   text-align: center;
+  margin-top: 10px;
 }
 
 
@@ -79,12 +88,15 @@ button:hover {
   .register-container {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
-  .image-side img, 
-  .form-side .container {
-    width: 90%;
-  }
+ .image-part img, 
+.form-part .container {
+  width: 48%;
+  height: 400px;
+  object-fit: cover;
+}
 }
 
 
