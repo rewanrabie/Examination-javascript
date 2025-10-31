@@ -7,22 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="img-des">
-        <img src="login.jpg" alt="login pic">
-    </div>
+    
+
     <div class="container">
-        <h1>login</h1>  
-        <hr>
-        <br>
-        <form method="GET"  action="examPage/index.html" onsubmit="return validation(event)">
-<a href="../Register/register.html"></a>
+        <div class="image-part">
+        <img src="login.jpg">
+        </div>
+        
+        
+        
+        
+        <form method="GET"  action="../examPage/index.html" onsubmit="return validation(event)">
+             <h1>Login ...</h1>  
             <div class="input-group">
                 <label for="user-name">User Name</label>
-                <input type="text" id="user-name" required>
+                <input type="text" id="user-name"  placeholder="Enter your userName" required>
                 <br>
                 <br>
                 <label for="password">password</label>
-                <input type="password" id="password" required>
+                <input type="password" id="password"  placeholder="Enter the Password" required>
              </div>
              <p></p>
 
@@ -31,11 +34,12 @@
             <div class="btn-submit">
                 <input type="submit" value="Log in">
             </div>
-            
+            <div>If you don't have an account <a href="../Register/register.html">register</a></div>
+       
+        <p class="warning">Your exam duration is only 30 minutes, starting as soon as you sign in.</p>
         </form>
         
-        <a href="../Register/register.html">register</a>
-        <p class="warning">Your exam duration is only 30 minutes, starting as soon as you sign in.</p>
+        
     </div>
     
 <script src="login.js"></script>

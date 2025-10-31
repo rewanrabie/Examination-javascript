@@ -13,9 +13,6 @@ function validation(e){
     }else if (localStorage.getItem("password") !=password.value){
         e.preventDefault();
         pp.textContent = "wrong password" 
-    }else{
-         e.preventDefault();
-        pp.textContent = "hello world" 
     }
 
 }

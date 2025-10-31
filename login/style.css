@@ -1,66 +1,50 @@
-*{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   
-    font-weight: bold;
-}
 
-
-
-
-body{
- position: relative;
+body { 
+  font-family: Arial;
+  background: linear-gradient(135deg, #506fa3, #5b77ab); 
+  display: flex;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .container{
-    /* margin-top: 15%; */
-    position: absolute;
-    margin: 15%;
-    padding : 0px;
-    text-align: center;
-    background-color:rgba(0, 183, 255, 0.226);
-    border-radius: 10px;
-    z-index: 4;
-    right: 10px;
-}
-.container>*{
-    margin:0;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-label{
-    
-    display: block;
-    color : black;
-    padding-bottom: 15px;
+  align-items: stretch; 
+  gap: 40px; 
+  max-width: 1000px; 
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  
 }
 
-input{
-    width: 500px;
-    height: 35px;
-    border-radius: 10px;
-    
-}
-h1{
-    background-color: rgba(0, 0, 255, 0.252);
-    height: 60px;
-    text-align: center;
-    padding-top: 15px;
-    border-radius: 10px;
-    color: white;
-}
-.btn-submit input{
-    padding-bottom: 10px;
-    height: 35px;
-    background-color: rgba(0, 0, 255, 0.252);
-    margin-bottom: 20px;
 
+h1 {
+  text-align: center;
+  color: #e0f7fa; 
+  margin-bottom: 25px;
 }
-.btn-submit input:hover{
-    font-family: fantasy;
-    font-size: 20px;
-    background-color: blue;
-    color: lightblue ;
+label {
+   color: #e0f7fa;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+    padding: 5px;
 }
+
+input {
+  background-color: #e0f7fa;
+  width: 350px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #90caf9; 
+  border-radius: 9px;
+}
+
+
+
 p{
     color: red;
 }
@@ -69,8 +53,55 @@ p{
     color:brown;
 }
 
-img{
-    position: absolute;
-    z-index: 1;
+.image-part img {
+  width: 800px; 
+  height: 100%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px #0000004d;
 }
 
+
+
+form {
+  background-color: #3a5f8f; 
+  display: flex;
+  flex-direction: column;
+  padding-right: 55px ;
+  padding-left: 30px ;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px #0000004d;
+  width: 500px;
+}
+
+
+input[type="submit"]{
+  width: 100%;
+  margin-top:20px;
+  margin-left: 12px;
+  background-color: #254974;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #132133; 
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+ div img, 
+form {
+  width: 48%;
+  height: 400px;
+  object-fit: cover;
+}
+}
