@@ -98,26 +98,36 @@ body{
 
 
 .timer-line {
-  position: relative;
   width: 100%;
-  background-color: #6680dc;
+  background-color: #9aaadf;
   height: 14px;
   border-radius: 8px;
   overflow: hidden;
-  margin: 10px 0;
+  margin-bottom: 25px;
 }
 
-.time-action {
-  background-color: #5d70b1;
+.action {
+  background-color: #3d5fb5;
   width: 100%;
   height: 100%;
   transition: width 1s linear;
 }
 
-#time-display {
-  position: absolute;
-  top: -25px;
-  right: 0;
+
+.timer-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 5px solid #1e2f57;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   font-weight: bold;
-  color: #8b5e3c;
+  font-size: 20px;
+  color: #283f62;
+  background-color: #61859c;
 }
+
+
+
