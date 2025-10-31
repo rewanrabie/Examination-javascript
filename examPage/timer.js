@@ -15,7 +15,8 @@ var timer = setInterval(function () {
 
   if (totalTime <= 0) {
     alert("Time OuT ... !");
-    endQuiz(true, "resultPage\index.html");
+    endQuiz(true,"resultPage\index.html");
+    document.location.href = "resultPage/index.html";
   }
 }, 1000);
 
