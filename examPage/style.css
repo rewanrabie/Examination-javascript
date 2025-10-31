@@ -69,3 +69,55 @@ body{
 .answers p{
     display: inline;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.timer-line {
+  position: relative;
+  width: 100%;
+  background-color: #6680dc;
+  height: 14px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.time-action {
+  background-color: #5d70b1;
+  width: 100%;
+  height: 100%;
+  transition: width 1s linear;
+}
+
+#time-display {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  font-weight: bold;
+  color: #8b5e3c;
+}
