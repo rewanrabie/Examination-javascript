@@ -126,7 +126,11 @@ function choose(answer){
     }
     console.log(correct_answers.size) ; let result = (correct_answers.size/ques.length)*100;
     console.log(result)
+    localStorage.setItem("mark",result);
 }
+
+
+
 
 
 
