@@ -1,6 +1,6 @@
 let btnNext  = document.getElementById("next")
 let btnpre  = document.getElementById("pre")
-
+localStorage.setItem("mark",0)
 
 let question1 = {
     ques : "how are you doing?",
@@ -112,7 +112,6 @@ function change(q){
     showQuest(q);
     question =q;
 }
-
 let correct_answers = new Set();
 let answered_ques = new Object()
 function choose(answer){
