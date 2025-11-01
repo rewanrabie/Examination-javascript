@@ -40,6 +40,9 @@ body{
     width:40% ;
     color : white;
 }
+.answers>*:hover{
+    background-color: #3d5fb5;
+}
 
 .submit-btn button{
     width: 100%;
