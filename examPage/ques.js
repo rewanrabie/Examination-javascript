@@ -31,7 +31,7 @@ let quesEl = document.querySelector(".question h1")
 
 
 function showQuest(question){
-quesEl.textContent = ques[question-1].ques;
+    quesEl.textContent = question+"- "+ques[question-1].ques;
 for(let i = 1; i<=4;i++){
     let answer = document.querySelector(`.answers .answer-${i} p`)
     answer.textContent = ques[question-1].answers[i-1]

@@ -82,7 +82,9 @@ body {
 #pre{
     display:none;
 }
-
+.moving{
+  margin : 0 auto;
+}
 .timer-line {
   width: 100%;
   background-color: #9aaadf;
