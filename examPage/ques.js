@@ -110,6 +110,7 @@ function mark(){
 let button_marked = document.getElementById(`question-${question}`)
 function change(q){
     showQuest(q);
+    question =q;
 }
 
 let correct_answers = new Set();
