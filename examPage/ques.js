@@ -11,17 +11,17 @@ let question1 = {
 let question2 = {
     ques : "how many fingers are  in your both hands?",
     answers :["5","10","15","20"] ,
-    correct : 1
+    correct : 2
 }
 let question3 = {
     ques : "Do dogs fly?",
     answers :["No","Yes","Maybe","IDK"] ,
-    correct : 1
+    correct : 3
 }
 let question4 = {
     ques : "where is Egypt?",
     answers :["No","Yes","Maybe","IDK"] ,
-    correct : 1
+    correct : 4
 }
 
 let ques = [question1,question2,question3,question4];
@@ -54,13 +54,13 @@ let question  = 1 ;
 showQuest(question)
 
 function next(){
-    console.log(question)
+
     if(question==1){
        btnpre.style.display="inline" 
        question ++;
     showQuest(question)  
-    }else if(question==ques.length-1){
-        
+    }else if(question==ques.length){
+        question++;
         showQuest(question)  
         btnNext.style.display="none";
     }
@@ -113,13 +113,14 @@ function change(q){
 }
 
 let correct_answers = new Set();
-
+let answered_ques = new Object()
 function choose(answer){
     // let checked = document.querySelector("input[name='xx']:checked").value
     // console.log(answer)
+    answered_ques[question] = answer;
     if(!correct_answers.has(question)){
         
-        if((ques[question].correct)==answer){
+        if((ques[question-1].correct)==answer){
             
             correct_answers.add(question)
         }
