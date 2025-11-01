@@ -7,6 +7,7 @@ let question1 = {
     answers :["good","bad","nice","Stright"] ,
     correct : 1
 }
+
 let question2 = {
     ques : "how many fingers are  in your both hands?",
     answers :["5","10","15","20"] ,
@@ -53,13 +54,13 @@ let question  = 1 ;
 showQuest(question)
 
 function next(){
-
+    console.log(question)
     if(question==1){
        btnpre.style.display="inline" 
        question ++;
     showQuest(question)  
     }else if(question==ques.length-1){
-        question ++;
+        
         showQuest(question)  
         btnNext.style.display="none";
     }
@@ -67,6 +68,9 @@ function next(){
         question ++;
         showQuest(question)    
     }
+
+    let a = document.querySelector(`input[name="xx"][value="0"]`);
+    a.checked = true;
 
     
 }
@@ -106,7 +110,28 @@ function mark(){
 let button_marked = document.getElementById(`question-${question}`)
 function change(q){
     showQuest(q);
-   
 }
+
+let correct_answers = new Set();
+
+function choose(answer){
+    // let checked = document.querySelector("input[name='xx']:checked").value
+    // console.log(answer)
+    if(!correct_answers.has(question)){
+        
+        if((ques[question].correct)==answer){
+            
+            correct_answers.add(question)
+        }
+    }
+    console.log(correct_answers.size) ; let result = (correct_answers.size/ques.length)*100;
+    console.log(result)
+}
+
+
+
+
+
+
 
 

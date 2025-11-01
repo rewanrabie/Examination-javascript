@@ -24,10 +24,11 @@
             <h1></h1> 
         </div>
         <div class="answers">
-            <div class="answer-1"><input type="radio" name="xx" value="1"><P>Answer1</P></div>
-            <div class="answer-2"><input type="radio" name="xx" value="2"><p>Answer2</p></div>
-            <div class="answer-3"><input type="radio" name="xx" value="3"><p>Answer3</p></div>
-            <div class="answer-4"><input type="radio" name="xx" value="4"><p>Answer4</p></div>
+            <div class="answer-1"><input type="radio" name="xx" onclick="choose(1)" value=1><P>Answer1</P></div>
+            <div class="answer-2"><input type="radio" name="xx" onclick="choose(2)" value=2><p>Answer2</p></div>
+            <div class="answer-3"><input type="radio" name="xx" onclick="choose(3)" value=3><p>Answer3</p></div>
+            <div class="answer-4"><input type="radio" name="xx" onclick="choose(4)" value=4><p>Answer4</p></div>
+            <div class="no" hidden><input type="radio" name="xx" value=0 hidden checked><p></p></div>
         </div>
         <div class="moving">
             <button id = "pre"class="pre" onclick="pre()">PREVIESE</button>
