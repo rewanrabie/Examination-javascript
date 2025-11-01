@@ -91,6 +91,13 @@ input[type="submit"]:hover {
   background-color: #132133; 
 }
 
+.register{
+  margin-top: 10px;
+  text-align: center;
+  color:white;
+}
+
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
