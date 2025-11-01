@@ -131,9 +131,9 @@ function choose(answer){
     localStorage.setItem("mark",result);
 }
 
-
-
-
+function submit(){
+    window.location.href="../resultPage/index.html"
+}
 
 
 
