@@ -11,14 +11,14 @@ form.addEventListener("submit", function(e){
     var rePassword = document.getElementById("rePassword").value;
 
 
-    var nameregex =`^[a-z0-9_-]{3,15}$`;
+    var nameregex = new RegExp("^[a-z0-9_-]{3,15}$")    ;
     if(!nameregex.test(firstName) || !nameregex.test(lastName)){
         error.textContent = "Invalid ";
         return;
     }
 
  
-    var emailregex = `[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+`;
+    var emailregex = new RegExp( "[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+");
     if(!emailregex.test(email)){
         error.textContent = "Invalid email";
         return;
@@ -46,6 +46,6 @@ form.addEventListener("submit", function(e){
     localStorage.setItem("userData", JSON.stringify(userData));
     localStorage.setItem("registered", "true");
 
-    alert("Registration successful!");
+    // alert("Registration successful!");
     window.location.href = "../examPage/index.html";
 });
