@@ -2,16 +2,14 @@ body {
   display: flex;
   flex-direction: row;
   margin: 0;
-  font-family: Arial;
 }
-
 .marked {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 22%;
   height: 100vh;
-  background-color: #3d4e91;
+   background-color: #2a3a6e;
   overflow-y: auto;
 }
 
@@ -22,19 +20,19 @@ body {
 .container {
   width: 80%;
   height: 100vh;
-  background-color: #e8ebf9;
+ background-color: #eef1fb;
   border-radius: 0 15px 15px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 25px;
   box-sizing: border-box;
-  color: #222840;
+  color: #1b1f3b;
 }
 
 .question h1 {
   text-align: center;
-  color: #22206d;
+  color:  #1e2f57;
   margin-bottom: 20px;
 }
 
@@ -48,7 +46,7 @@ body {
 .answers > * {
   padding: 15px;
   border-radius: 10px;
-  background-color: #5d70b1;
+   background-color: #3d4e91;
   margin: 10px;
   width: 30%;
   color: white;
@@ -56,7 +54,7 @@ body {
 }
 
 .answers > *:hover {
-  background-color: #3d4e91;
+   background-color:#2a3a6e;
 }
 
 .answers p {
@@ -64,26 +62,52 @@ body {
 }
 .question-marked {
   width: 100%;
-  background-color:#242d4c;
-  color: #959aaa;
+ background-color:#5e74bf;
+  color: #d4d8eb;
   border-radius: 8px;
   height: 35px;
   border: none;
 }
-.submit-btn button{
-    width: 100%;
-    height: 30px;
-    position: fixed;
-    bottom:0;
-    background-color:green;
-    font-weight: bold;
-    color: white;
+.question-marked:hover {
+  background-color: rgba(54, 100, 157, 0.3);
 }
+.submit-btn button {
+  width: 150px;
+  height: 40px;
+  display: block;
+  background-color:#1e2f57;
+  font-weight: bold;
+  color: white;
+  border: none;
+ border-radius: 10px;
+ margin: 25px auto;
+}
+.submit-btn button:hover {
+    background-color:#3d4e91;
+}
+
 #pre{
     display:none;
 }
-.moving{
-  margin : 0 auto;
+
+.moving {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin: 20px 40px 20px 0;
+}
+.moving button {
+   background-color: #3d4e91;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.moving button:hover {
+  background-color: #2a3a6e;
 }
 .timer-line {
   width: 100%;
@@ -95,7 +119,7 @@ body {
 }
 
 .action {
-  background-color: #5d70b1;
+  background-color:#3d4e91;
   width: 100%;
   height: 100%;
   transition: width 1s linear;
@@ -113,8 +137,8 @@ body {
   margin: 0 auto;
   font-weight: bold;
   font-size: 20px;
-  color: #283f62;
-  background-color: #61859c;
+   color: #1e2f57;
+ background-color: #9aaadf;
 }
 
 
