@@ -1,6 +1,12 @@
 let btnNext  = document.getElementById("next")
 let btnpre  = document.getElementById("pre")
+let checked = document.querySelector("input[name='xx']:checked").value
+let answered_ques = new Object()
 localStorage.setItem("mark",0)
+let question  = 1 ;
+
+
+answered_ques[question] = checked;
 
 let question1 = {
     ques : "how are you doing?",
@@ -31,6 +37,14 @@ let quesEl = document.querySelector(".question h1")
 
 
 function showQuest(question){
+    if(Number(answered_ques[question])){
+        let ans =document.querySelector(`input[name="xx"][value="${question}"]`);
+        ans.checked = true;
+    }else{
+        let nu =document.querySelector(`input[name="xx"][value="0"]`)
+        nu.checked =true;
+    }
+    
     quesEl.textContent = question+"- "+ques[question-1].ques;
 for(let i = 1; i<=4;i++){
     let answer = document.querySelector(`.answers .answer-${i} p`)
@@ -49,9 +63,8 @@ for(let i = 1; i<=4;i++){
 
 }
 
-
-let question  = 1 ;
 showQuest(question)
+
 
 function next(){
 
@@ -69,8 +82,7 @@ function next(){
         showQuest(question)    
     }
 
-    let a = document.querySelector(`input[name="xx"][value="0"]`);
-    a.checked = true;
+    
 
     
 }
@@ -113,9 +125,9 @@ function change(q){
     question =q;
 }
 let correct_answers = new Set();
-let answered_ques = new Object()
+
 function choose(answer){
-    // let checked = document.querySelector("input[name='xx']:checked").value
+    
     // console.log(answer)
     answered_ques[question] = answer;
     if(!correct_answers.has(question)){
@@ -124,9 +136,14 @@ function choose(answer){
             
             correct_answers.add(question)
         }
+    }else{
+        if((ques[question-1].correct)!=answer){
+            
+            correct_answers.delete(question)
+        }
     }
-    console.log(correct_answers.size) ; let result = (correct_answers.size/ques.length)*100;
-    console.log(result)
+    let result = (correct_answers.size/ques.length)*100;
+    
     localStorage.setItem("mark",result);
 }
 
