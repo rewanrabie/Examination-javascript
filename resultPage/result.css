@@ -1,6 +1,6 @@
 body { 
  font-family: Arial;
- 
+  background: linear-gradient(135deg, #506fa3, #5b77ab); 
 }
 
 .Result-container {
