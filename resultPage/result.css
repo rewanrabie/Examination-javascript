@@ -1,0 +1,32 @@
+body { 
+ font-family: Arial;
+ 
+}
+
+.Result-container {
+  display: flex;
+  width: 100%;
+} 
+
+.image-part {
+    width: 40%;
+    margin: auto 5%;
+  
+}
+
+.image-part img {
+
+}
+
+.result-details {
+    width: 40%;
+  background-color: #e8ebf9;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px #00000033;
+  font-size: 20px;
+  color: #222840; 
+}
+
+
+
