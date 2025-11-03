@@ -20,4 +20,4 @@ result.textContent=mark+"%";
       scoreElement.textContent = count + "%";
       scoreElement.style.setProperty('--score', count);
     }
-  }, 30);
+  }, 60);
