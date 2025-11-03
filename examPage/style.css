@@ -53,8 +53,17 @@ body {
   font-size: 20px;
 }
 
+.answers > *:has(input[name="xx"]:checked){
+   background-color:white;
+   color:#2a3a6e;
+   border: #2a3a6e 2px solid;
+  
+}
 .answers > *:hover {
-   background-color:#2a3a6e;
+   background-color:#ddd;
+   color:#2a3a6e;
+   border: #2a3a6e 2px solid;
+   cursor: pointer;
 }
 
 .answers p {
