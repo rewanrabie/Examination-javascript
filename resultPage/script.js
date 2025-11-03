@@ -1,23 +1,23 @@
-let mark  = localStorage.getItem("mark")
-let result = document.querySelector("#score")
+const mark  = localStorage.getItem("mark")
 
 
 
-result.textContent=mark+"%";
 
-  const scoreElement = document.getElementById("score");
-  const scoreValue = mark; 
+
+
+  const scoreEl = document.getElementById("score");
+
         
-  
+  // scoreEl.textContent = mark + "%";
   
   
   
   let count = 0;
   const interval = setInterval(() => {
-    if (count >= scoreValue) clearInterval(interval);
+    if (count >= mark) clearInterval(interval);
     else {
       count++;
-      scoreElement.textContent = count + "%";
-      scoreElement.style.setProperty('--score', count);
+      scoreEl.textContent = count + "%";
+      scoreEl.style.setProperty('--s', count);
     }
   }, 60);

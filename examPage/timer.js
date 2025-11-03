@@ -1,4 +1,4 @@
-var totalTime = .10 * 60;
+var totalTime = 15 * 60;
 
 var timeview = document.getElementById("time");
 var actionLine = document.querySelector(".action");
