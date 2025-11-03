@@ -112,10 +112,11 @@ if (question==1){btnpre.style.display = "none"}
 let marked_ques  = new Set();
 function mark(){
     if(marked_ques.has(question)){
-
+         let bu =document.getElementById(`question-${question}`)
+         bu.hidden=false;
     }else{
         marked_ques.add(question)
-        document.querySelector(".marked").innerHTML+=(`<div><button class="question-marked" id="question-${question}" onclick="change(${question})">Question ${question}</button></div>`)
+        document.querySelector(".marked").innerHTML+=(`<div id="question-${question}"><button class="question-marked"  onclick="change(${question})">Question ${question}</button></div>`)
     }
 
 }
@@ -124,6 +125,10 @@ let button_marked = document.getElementById(`question-${question}`)
 function change(q){
     showQuest(q);
     question =q;
+    let bu =document.getElementById(`question-${q}`)
+    bu.remove()
+    marked_ques.delete(q)
+
 }
 let correct_answers = new Set();
 
