@@ -4,6 +4,7 @@ var timeview = document.getElementById("time");
 var actionLine = document.querySelector(".action");
 
 var timer = setInterval(function () {
+  
   totalTime--;
 
   var minutes = Math.floor(totalTime / 60);
@@ -15,7 +16,7 @@ var timer = setInterval(function () {
 
   if (totalTime <= 0) {
     
-   
+    clearInterval(timer);
     window.location.href="../resultPage/index.html"
   }
 }, 1000);
