@@ -31,6 +31,7 @@ let question4 = {
 }
 
 let ques = [question1,question2,question3,question4];
+ques.sort(()=> (Math.random()-.5));
 
 
 let quesEl = document.querySelector(".question h1")
