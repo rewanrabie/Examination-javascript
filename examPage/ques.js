@@ -234,7 +234,7 @@ function mark(){
          bu.hidden=false;
     }else{
         marked_ques.add(question)
-        document.querySelector(".marked").innerHTML+=(`<div id="question-${question}"><button class="question-marked"  onclick="change(${question})">Question ${question}</button></div>`)
+        document.querySelector(".marked").innerHTML+=(`<div id="question-${question}"><button class="question-marked"  onclick="change(${question})">Q ${question}</button></div>`)
     }
 
 }

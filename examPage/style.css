@@ -78,7 +78,7 @@ body {
 }
 .question-marked {
   width: 100%;
- background-color:#bf955e;
+ background-color:#5e8dbf;
   color: #d4d8eb;
   border-radius: 8px;
   height: 35px;
@@ -164,7 +164,7 @@ input[type="radio"]{
 }
 
 .moving .mark{
-  background-color: #bf955e;
+  background-color: #61131e;
  
 }
 
