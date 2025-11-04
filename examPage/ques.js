@@ -1,6 +1,7 @@
 let btnNext  = document.getElementById("next")
 let btnpre  = document.getElementById("pre")
-let checked = document.querySelector("input[name='xx']:checked").value
+let checkedInput = document.querySelector("input[name='xx']:checked");
+let checked = checkedInput ? checkedInput.value : 0;
 let answered_ques = new Object()
 localStorage.setItem("mark",0)
 let question  = 1 ;
@@ -105,7 +106,7 @@ answered_ques[question] = checked;
 //     question13,question14,question15,question16,
 //     question17,question18,question19
 // ];
-const jsonText = `
+const questions = `
 [
     {"ques": "What does HTML stand for?", "answers": ["Hyper Text Markup Language", "High Text Machine Language", "Hyper Tool Multi Language", "Home Tool Markup Language"], "correct": 1},
     {"ques": "Which HTML element defines the largest heading?", "answers": ["<heading>", "<h6>", "<h1>", "<head>"], "correct": 3},
@@ -133,7 +134,7 @@ const jsonText = `
     {"ques": "Which company developed JavaScript?", "answers": ["Microsoft", "Netscape", "Google", "Mozilla"], "correct": 2},
     {"ques": "Which symbol is used for comments in JavaScript?", "answers": ["//", "/* */", "<!-- -->", "#"], "correct": 1},
     {"ques": "Which method displays a message box?", "answers": ["prompt()", "confirm()", "alert()", "show()"], "correct": 3},
-    {"ques": "How do you declare a variable in JavaScript?", "answers": ["variable name;", "var name;", "v name;", "let name;"], "correct": 2},
+    {"ques": "How do you declare a variable in JavaScript?", "answers": ["variable name;", "var name;", "v name;", "set name;"], "correct": 2},
     {"ques": "Which keyword declares a constant?", "answers": ["let", "const", "var", "constant"], "correct": 2},
     {"ques": "Which operator is used for strict equality?", "answers": ["===", "==", "=", "!="], "correct": 1},
     {"ques": "Which method converts a string to lowercase?", "answers": ["toLowerCase()", "toLower()", "changeLower()", "lowerCase()"], "correct": 1},
@@ -143,7 +144,7 @@ const jsonText = `
 `;
 
 
-const ques = JSON.parse(jsonText);
+const ques = JSON.parse(questions);
 
 
 
@@ -156,11 +157,11 @@ let quesEl = document.querySelector(".question h1")
 
 function showQuest(question){
     if(Number(answered_ques[question])){
-        let ans =document.querySelector(`input[name="xx"][value="${question}"]`);
-        ans.checked = true;
+        let ans =document.querySelector(`input[name="xx"][value="${answered_ques[question]}"]`);
+        if (ans) ans.checked = true;
     }else{
         let nu =document.querySelector(`input[name="xx"][value="0"]`)
-        nu.checked =true;
+        if (nu) nu.checked = true;
     }
     
     quesEl.textContent = question+"- "+ques[question-1].ques;
@@ -191,10 +192,10 @@ function next(){
        question ++;
     showQuest(question)  
     }else if(question==ques.length){
-        question++;
-        showQuest(question)  
-        btnNext.style.display="none";
-    }
+     btnNext.style.display="none";
+    return;
+}
+
     else{
         question ++;
         showQuest(question)    

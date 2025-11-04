@@ -1,4 +1,4 @@
-var totalTime = 15 * 60;
+var totalTime = 5 * 60;
 
 var timeview = document.getElementById("time");
 var actionLine = document.querySelector(".action");
@@ -12,7 +12,7 @@ var timer = setInterval(function () {
 
   timeview.textContent = minutes + ":" + (seconds < 10 ? "0" + seconds : seconds);
 
-  actionLine.style.width = (totalTime / (15 * 60)) * 100 + "%";
+  actionLine.style.width = (totalTime / (5 * 60)) * 100 + "%";
 
   if (totalTime <= 0) {
     

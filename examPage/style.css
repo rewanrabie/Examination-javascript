@@ -2,15 +2,21 @@ body {
   display: flex;
   flex-direction: row;
   margin: 0;
+  background-color: #eef1fb;
 }
 .marked {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 22%;
-  height: 100vh;
+  height: 95vh;
    background-color: #2a3a6e;
   overflow-y: auto;
+  border: #1b1f3b 5px solid;
+  border-radius: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  
 }
 
 .marked > * {
@@ -44,6 +50,7 @@ body {
 }
 
 .answers > * {
+
   padding: 15px;
   border-radius: 10px;
    background-color: #3d4e91;
@@ -71,14 +78,14 @@ body {
 }
 .question-marked {
   width: 100%;
- background-color:#5e74bf;
+ background-color:#bf955e;
   color: #d4d8eb;
   border-radius: 8px;
   height: 35px;
   border: none;
 }
 .question-marked:hover {
-  background-color: rgba(54, 100, 157, 0.3);
+  background-color: rgba(157, 54, 54, 0.843);
 }
 .submit-btn button {
   width: 150px;
@@ -99,14 +106,15 @@ body {
     display:none;
 }
 
+
 .moving {
   display: flex;
   justify-content: flex-end;
-  gap: 10px;
+  gap: 40px;
   margin: 20px 40px 20px 0;
 }
 .moving button {
-   background-color: #3d4e91;
+  background-color: #3d4e91;
   color: white;
   border: none;
   padding: 10px 25px;
@@ -151,4 +159,16 @@ body {
 }
 
 
+input[type="radio"]{
+  appearance: none;
+}
 
+.moving .mark{
+  background-color: #bf955e;
+ 
+}
+
+.moving .mark:hover{
+  background-color:rgba(157, 54, 54, 0.843);
+  
+}
