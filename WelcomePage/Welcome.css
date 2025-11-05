@@ -1,0 +1,38 @@
+body { 
+   background: linear-gradient(135deg, #506fa3, #5b77ab); 
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image-part img {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.button {
+  display: flex;
+  gap: 80px;
+}
+
+.button button {
+   background-color: #254974;
+  color:white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 8px;
+  
+}
+
+.button button:hover {
+  background-color: #132133;  
+}

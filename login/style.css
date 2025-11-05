@@ -58,7 +58,6 @@ p{
   height: 100%;
   padding: 10px 10px;
   border-radius: 10px;
-  box-shadow: 0 10px 25px #0000004d;
 }
 
 
@@ -70,7 +69,7 @@ form {
   padding-right: 55px ;
   padding-left: 30px ;
   border-radius: 20px;
-  box-shadow: 0 10px 25px #0000004d;
+  /* box-shadow: 0 10px 25px #0000004d; */
   width: 500px;
 }
 
@@ -98,11 +97,12 @@ input[type="submit"]:hover {
 }
 
 
-@media (max-width: 768px) {
+@media (min-width:0px) and (max-width: 600px) {
   .container {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    display: block;
   }
 
  div img, 

@@ -22,11 +22,10 @@ body {
 
 .image-part img {
   width: 800px; 
-  height: 100%;
   padding: 10px 10px;
   display: flex;
   border-radius: 10px;
-  box-shadow: 0 10px 25px #0000004d;
+ 
 }
 
 .form-part .container {
@@ -38,6 +37,7 @@ body {
   border-radius: 20px;
   box-shadow: 0 10px 25px #0000004d;
   width: 400px;
+  padding-bottom: 10px;
 }
 
 h1 {
