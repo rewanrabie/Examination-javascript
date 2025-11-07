@@ -58,6 +58,7 @@ p{
   height: 100%;
   padding: 10px 10px;
   border-radius: 10px;
+  box-shadow: 0 10px 25px #0000004d;
 }
 
 
@@ -72,7 +73,7 @@ form {
   padding-top: 40px;
 
   border-radius: 20px;
-  /* box-shadow: 0 10px 25px #0000004d; */
+  box-shadow: 0 10px 25px #0000004d;
   width: 500px;
   height: 500px;
 }
@@ -101,12 +102,11 @@ input[type="submit"]:hover {
 }
 
 
-@media (min-width:0px) and (max-width: 600px) {
+@media (max-width: 768px) {
   .container {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    display: block;
   }
 
  div img, 
@@ -118,6 +118,10 @@ form {
 }
 a{
   text-decoration:none;
+<<<<<<< HEAD
   color: rgb(38, 43, 139);
   
+=======
+  color: rgb(255, 0, 0);
+>>>>>>> 162d40b875253f316734a01e5a364f46a6451543
 }

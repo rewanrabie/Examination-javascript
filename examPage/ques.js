@@ -272,7 +272,7 @@ function choose(answer){
 }
 
 function submit(){
-    window.location.href="../resultPage/index.html"
+    window.location.replace("../resultPage/index.html")
 }
 
 
