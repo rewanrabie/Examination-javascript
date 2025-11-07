@@ -7,7 +7,7 @@ localStorage.setItem("mark",0)
 let question  = 1 ;
 
 let c = JSON.parse(localStorage.getItem("userData"))
- document.getElementById("username").textContent+=" "+c.username
+ document.querySelector("#username strong").textContent+=" "+c.username
 
 answered_ques[question] = checked;
 

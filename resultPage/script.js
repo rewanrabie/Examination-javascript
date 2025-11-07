@@ -1,7 +1,7 @@
 const mark  = localStorage.getItem("mark")
 
-
-
+let username= JSON.parse(localStorage.getItem("userData")).username
+let usernameEl = document.querySelector(".result-details h2 .user-name")
 
 
 
@@ -22,23 +22,28 @@ const mark  = localStorage.getItem("mark")
     }
   }, 30);
 
-let gradEl = document.querySelector(".result-details h2")
+let gradEl = document.querySelector(".result-details h2 p")
 
 
 
 if(mark<50){
-  gradEl.textContent = "You failed ,Try Again don't give Up";
+  gradEl.textContent = `You failed ,Try Again don't give Up`;
+  usernameEl.textContent=username;
   gradEl.style.color="#274eb2ff";
 }
 else if(mark>50&&mark<65){
-gradEl.textContent = "Not bad! but need to improve yourself";
+gradEl.textContent = `Not bad! but need to improve yourself`;
+usernameEl.textContent=username;
 gradEl.style.color = "#274eb2ff"
 }else if(mark>65&&mark<75){
-  gradEl.textContent = "Keep Going , You Can do it";
+  gradEl.textContent = `Keep Going , You Can do it`;
+  usernameEl.textContent=username;
 }else if(mark>75&&mark<85){
-  gradEl.textContent = "Keep it Up !";
+  gradEl.textContent = `${username},Keep it Up !`;
+  usernameEl.textContent=username;
   
 }else{
-  gradEl.textContent = "Excellent Work !!";
+  gradEl.textContent = `Excellent Work !!`;
+  usernameEl.textContent=username;
   gradEl.style.color = "#274eb2ff"
 }
