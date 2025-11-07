@@ -27,18 +27,18 @@ let gradEl = document.querySelector(".result-details h2")
 
 
 if(mark<50){
-  gradEl.textContent = "You failed";
-  gradEl.style.color="red";
+  gradEl.textContent = "You failed ,Try Again don't give Up";
+  gradEl.style.color="#274eb2ff";
 }
 else if(mark>50&&mark<65){
-gradEl.textContent = "Not bad! but need to improve yourself.";
-gradEl.style.color = "brown"
+gradEl.textContent = "Not bad! but need to improve yourself";
+gradEl.style.color = "#274eb2ff"
 }else if(mark>65&&mark<75){
-  gradEl.textContent = "good!";
+  gradEl.textContent = "Keep Going , You Can do it";
 }else if(mark>75&&mark<85){
-  gradEl.textContent = "very good!";
+  gradEl.textContent = "Keep it Up !";
   
 }else{
-  gradEl.textContent = "Excellent!";
-  gradEl.style.color = "green"
+  gradEl.textContent = "Excellent Work !!";
+  gradEl.style.color = "#274eb2ff"
 }

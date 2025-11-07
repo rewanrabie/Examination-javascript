@@ -66,11 +66,15 @@ form {
   background-color: #3a5f8f; 
   display: flex;
   flex-direction: column;
-  padding-right: 55px ;
+  padding-right: 30px;
   padding-left: 30px ;
+  padding-bottom: 40px;
+  padding-top: 40px;
+
   border-radius: 20px;
   /* box-shadow: 0 10px 25px #0000004d; */
   width: 500px;
+  height: 500px;
 }
 
 
@@ -80,7 +84,7 @@ input[type="submit"]{
   margin-left: 12px;
   background-color: #254974;
   color: white;
-  padding: 15px;
+  padding:15px;
   border: none;
   border-radius: 8px;
   font-size: 16px;
@@ -114,6 +118,6 @@ form {
 }
 a{
   text-decoration:none;
-  color: rgb(255, 0, 0);
+  color: rgb(38, 43, 139);
   
 }

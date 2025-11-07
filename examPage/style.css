@@ -1,18 +1,17 @@
-body {
+ body {
   display: flex;
   flex-direction: row;
   margin: 0;
-  background-color: #eef1fb;
+ background: linear-gradient(135deg, #506fa3, #5b77ab); 
 }
 .marked {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 22%;
-  height: 95vh;
-   background-color: #2a3a6e;
+  height: 60vh;
+  background: #2a3a6e; 
   overflow-y: auto;
-  border: #1b1f3b 5px solid;
   border-radius: 10px;
   margin-top: auto;
   margin-bottom: auto;
@@ -26,7 +25,7 @@ body {
 .container {
   width: 80%;
   height: 100vh;
- background-color: #eef1fb;
+ background: linear-gradient(135deg, #506fa3, #5b77ab); 
   border-radius: 0 15px 15px 0;
   display: flex;
   flex-direction: column;
@@ -38,7 +37,7 @@ body {
 
 .question h1 {
   text-align: center;
-  color:  #1e2f57;
+  color:  #e2e7f2;
   margin-bottom: 20px;
 }
 
@@ -91,7 +90,7 @@ body {
   width: 150px;
   height: 40px;
   display: block;
-  background-color: #254974;
+  background-color: #2a3a6e; 
   font-weight: bold;
   color: white;
   border: none;
@@ -147,14 +146,14 @@ body {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  border: 5px solid #1e2f57;
+  border: 7px solid #2a3a6e;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   font-weight: bold;
   font-size: 20px;
-   color: #1e2f57;
+   color: #e4e9f3;
  background-color: #9aaadf;
 }
 
@@ -171,4 +170,5 @@ input[type="radio"]{
 .moving .mark:hover{
   background-color:rgba(157, 54, 54, 0.843);
   
-}
+} 
+
