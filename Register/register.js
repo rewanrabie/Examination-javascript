@@ -47,5 +47,5 @@ form.addEventListener("submit", function(e){
     localStorage.setItem("registered", "true");
 
     // alert("Registration successful!");
-    window.location.href = "../examPage/index.html";
+    window.location.replace("../examPage/index.html");
 });
