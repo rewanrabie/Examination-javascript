@@ -12,7 +12,7 @@ form.addEventListener("submit", function(e){
 
 
     var nameregex = new RegExp("^[a-z0-9_-]{3,15}$")    ;
-    if(!nameregex.test(firstName) || !nameregex.test(lastName)){
+    if(!nameregex.test(firstName)){
         error.textContent = "Invalid ";
         return;
     }
