@@ -36,7 +36,7 @@ label {
 
 input {
   background-color: #e0f7fa;
-  width: 350px;
+  width: max(350px,100%);
   padding: 10px;
   margin-top: 5px;
   border: 1px solid #90caf9; 
@@ -108,7 +108,11 @@ input[type="submit"]:hover {
 
   .container img, 
   .container form {
-    width: 90%;
+    width: 95%;
+    height: auto;
+  }
+  input{
+    width: 80%;
     height: auto;
   }
 }
