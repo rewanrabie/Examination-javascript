@@ -3,12 +3,17 @@ let btnpre  = document.getElementById("pre")
 let checkedInput = document.querySelector("input[name='xx']:checked");
 let checked = checkedInput ? checkedInput.value : 0;
 let answered_ques = new Object()
-localStorage.setItem("mark",0)
+
 let question  = 1 ;
 
 let c = JSON.parse(localStorage.getItem("userData"))
  document.querySelector("#username strong").textContent+=" "+c.username
-
+if(!localStorage.getItem("userData")){
+    window.location.replace("../loginPage/index.html")
+}else if(localStorage.getItem("submitted")){
+    window.location.replace("../resultPage/index.html")
+}else{
+localStorage.setItem("mark",0)
 answered_ques[question] = checked;
 
 // let question5 = {
@@ -274,12 +279,13 @@ function choose(answer){
 }
 
 function submitExam(){
+    localStorage.setItem("submitted",true);
     window.location.replace("../resultPage/index.html")
 }
 
 
 
 
-
+}
 
 
