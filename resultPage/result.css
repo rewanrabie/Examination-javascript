@@ -99,5 +99,19 @@
   }
 }
 
+.retake{
+  margin-top:20px;
+  padding:10px 20px;
+  font-size:16px;
+  background-color:#274eb2ff;
+  color:#fff;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
 
 
+
+.retake:hover{
+  background-color:#1e3f8aff;
+}

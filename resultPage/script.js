@@ -47,3 +47,9 @@ gradEl.style.color = "#274eb2ff"
   usernameEl.textContent=username;
   gradEl.style.color = "#274eb2ff"
 }
+
+
+function retake(){
+  localStorage.removeItem("submitted");
+  window.location.href="../examPage/index.html"
+}
