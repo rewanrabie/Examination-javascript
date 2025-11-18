@@ -273,7 +273,7 @@ function choose(answer){
     localStorage.setItem("mark",result);
 }
 
-function submit(){
+function submitExam(){
     window.location.replace("../resultPage/index.html")
 }
 
